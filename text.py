@@ -19,12 +19,13 @@ def countword()->int:
             forstart = forstart + 1
             if forstart == 1:
                 worde = line.strip()
+                count = count + 1
                 continue
             word = revword(word)
-            print(word)
             if word == worde:
                 count = count + 1
     return(count)
+
 
 '''
 bob=open('text.txt','r')
